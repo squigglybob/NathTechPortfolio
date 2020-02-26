@@ -6,7 +6,7 @@ webhook_url:
 sections:
 - type: directory
   path: src/pages
-  label: Pages
+  label: Articles
   create: documents
   match: "**/*.md"
   new_doc_ext: md
