@@ -9,6 +9,3 @@ fields:
   name: date
   label: Date
   default: now
-pages:
-- src/pages/my-first-article-on-forestry.md
-- src/pages/test-post.md
