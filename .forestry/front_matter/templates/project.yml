@@ -21,3 +21,5 @@ fields:
 - name: projectPicture
   type: file
   label: Project Picture
+pages:
+- src/pages/projects/project-test-1.md
