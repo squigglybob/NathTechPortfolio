@@ -12,7 +12,20 @@ jobs:
           steps:
             - run: npm install
             - run: npm test
+  build:
+    executor:
+      name: node/default
+      tag: '10.15.3' 
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - run: npm install
+            - run: npm build
 workflows:
     build-and-test:
       jobs:
         - build-and-test
+    build:
+      jobs:
+        - build
