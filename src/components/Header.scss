@@ -1,0 +1,50 @@
+@use 'main';
+
+  .header {
+    background: #34495E;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ebedef;
+    position: relative;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  .nav {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+  }
+  
+  .nav__link {
+    color: inherit;
+    padding: 5px 10px;
+  }
+  
+  .header__title {
+    font-size: 7rem;
+    font-weight: 300;
+    font-family: Montserrat;
+  }
+  
+  .header__sub-title {
+    font-family: Montserrat;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+  
+  .header__button {
+    background: #CD00B9;
+    color: #ebedef;
+    border: none;
+    border-radius: 1000px;
+    
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: Montserrat;
+    padding: 6px 60px;
+    margin-top: 30px;
+  }

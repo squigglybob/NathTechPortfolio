@@ -79,5 +79,12 @@ module.exports = {
       },
     },
     'gatsby-transformer-json',
+    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-sass-resources`,
+      options: {
+        resources: ['./src/styles/main.scss']
+      }
+    }
   ],
 }
