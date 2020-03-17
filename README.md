@@ -23,12 +23,11 @@ Or [view the live demo here](https://gatsby-starter-blog-demo.netlify.com/).
 - retrieve data from md files ( with GraphQL ) and render in components
 
 - Project template
-- header
+- header ✔
   - burger
-  - links
-  - Main title
-  - Subtitle
-  - social links
+  - links ✔
+  - Main title ✔
+  - Subtitle ✔
 - bio
   - image
   - text

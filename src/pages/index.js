@@ -1,9 +1,10 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
+import Projects from '../components/Projects';
 import Layout from '../components/Layout'
 import { rhythm } from '../utils/typography'
 
@@ -24,7 +25,9 @@ class BlogIndex extends React.Component {
           title={siteTitle}
         />
         <Bio />
-        {posts.map(({ node }) => {
+        <Projects />
+
+{/*         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
             <div key={node.fields.slug}>
@@ -41,7 +44,7 @@ class BlogIndex extends React.Component {
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           )
-        })}
+        })} */}
       </Layout>
     )
   }

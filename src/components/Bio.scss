@@ -1,0 +1,15 @@
+.bio {
+    display: flex;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.bio__image {
+    border-radius: 10000px;
+    width: 250px;
+}
+
+.bio__text {
+    padding-left: 50px;
+    font-size: 20px;
+}
