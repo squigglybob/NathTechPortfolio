@@ -65,3 +65,24 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        components: path.resolve(__dirname, 'src/components'),
+        pages: path.resolve(__dirname, 'src/pages'),
+        templates: path.resolve(__dirname, 'src/templates'),
+        utils: path.resolve(__dirname, 'src/utils'),
+      },
+    },
+    module: {
+      rules: [
+        {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader', 'sass-loader']
+        }
+      ]
+    }
+  })
+}
