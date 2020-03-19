@@ -26,3 +26,10 @@ $breakpoints: (
     'medium': 768px,
     'large': 1024px,
 );
+
+:export {
+    textColour: $text-colour;
+    brandColour: $brand-colour;
+    backgroundColour: $background-colour;
+    boldColour: $bold-colour;
+}
