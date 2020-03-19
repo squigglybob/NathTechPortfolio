@@ -83,7 +83,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass-resources`,
       options: {
-        resources: ['./src/styles/main.scss']
+        resources: [
+          './src/assets/styles/utilities/_functions.scss',
+          './src/assets/styles/utilities/_mixins.scss',
+          './src/assets/styles/utilities/_variables.scss',
+        ]
       }
     }
   ],

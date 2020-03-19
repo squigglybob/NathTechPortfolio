@@ -18,7 +18,7 @@ Or [view the live demo here](https://gatsby-starter-blog-demo.netlify.com/).
   - Loop over
     - create component
     - style component
-  - Adjust typography
+  - Adjust typography ✔
 - create forestry models for the parts of data that need to be held
 - retrieve data from md files ( with GraphQL ) and render in components
 
@@ -29,8 +29,8 @@ Or [view the live demo here](https://gatsby-starter-blog-demo.netlify.com/).
   - Main title ✔
   - Subtitle ✔
 - bio
-  - image
-  - text
+  - image ✔
+  - text ✔
 - carousel
   - Project card
     - Title
@@ -47,11 +47,12 @@ Or [view the live demo here](https://gatsby-starter-blog-demo.netlify.com/).
     - multi line input
     - social links (reuse)
 
+- make site responsive
 
 ## Toms ideas
 
 code pen
-splash dull hegiht
+splash full hegiht
 BEM style classnames
 get a title and subtitle centered
 with nice wide button

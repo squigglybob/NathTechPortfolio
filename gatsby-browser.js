@@ -1,2 +1,1 @@
-import "./src/styles/resets.scss"
-import "./src/styles/globalStyles.scss"
+import "./src/assets/styles/main.scss"

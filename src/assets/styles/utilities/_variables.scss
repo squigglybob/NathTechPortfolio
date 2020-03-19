@@ -1,0 +1,28 @@
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Montserrat', sans-serif;
+
+/// Copy text colour
+/// @type Color
+$text-colour: #333333;
+
+/// Main brand colour
+/// @type Color
+$brand-colour: #34495E;
+
+///@type Color
+$background-colour: #ebedef;
+
+/// @type Color
+$bold-colour: #CD00B9;
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers
+/// @prop {Map} values - breakpoint values
+$breakpoints: (
+    'small': 320px,
+    'medium': 768px,
+    'large': 1024px,
+);

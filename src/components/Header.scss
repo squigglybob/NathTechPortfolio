@@ -1,50 +1,56 @@
-@use 'main';
+.header {
+  background: $brand-colour;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $background-colour;
+  position: relative;
 
-  .header {
-    background: #34495E;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #ebedef;
-    position: relative;
-    font-family: Montserrat, sans-serif;
-  }
-  
-  .nav {
-    font-family: Montserrat;
-    font-size: 1.5rem;
-    position: absolute;
-    top: 10px;
-  }
-  
-  .nav__link {
-    color: inherit;
-    padding: 5px 10px;
-  }
-  
-  .header__title {
+  @include element(title) {
     font-size: 7rem;
     font-weight: 300;
-    font-family: Montserrat;
   }
   
-  .header__sub-title {
-    font-family: Montserrat;
+  @include element(sub-title) {
     font-size: 1.3rem;
     font-weight: 300;
   }
   
-  .header__button {
-    background: #CD00B9;
-    color: #ebedef;
+  @include element(button) {
+    background: $bold-colour;
+    color: $background-colour;
     border: none;
     border-radius: 1000px;
-    
     font-size: 1.4rem;
     font-weight: 400;
-    font-family: Montserrat;
     padding: 6px 60px;
     margin-top: 30px;
+    transition: 400ms;
+
+    &:hover {
+      background-color: darken($bold-colour, 4%);
+    }
   }
+
+}
+
+.nav {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+
+  @include element(link) {
+    color: inherit;
+    padding: 5px 10px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}
+
+
+
