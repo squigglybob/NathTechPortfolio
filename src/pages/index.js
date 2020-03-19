@@ -3,10 +3,9 @@ import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import Bio from '../components/Bio'
-import Projects from '../components/Projects';
-import Layout from '../components/Layout'
-import { rhythm } from '../utils/typography'
+import Bio from 'components/Bio'
+import Projects from 'components/Projects';
+import Layout from 'components/Layout'
 
 class BlogIndex extends React.Component {
   render() {

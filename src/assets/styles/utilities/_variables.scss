@@ -11,6 +11,24 @@ $text-colour: #333333;
 /// @type Color
 $brand-colour: #34495E;
 
+/// @type Color
+$asphalt-dark: #283747;
+
+/// @type Color
+$asphalt-mid: #85929E;
+
+/// @type Color
+$asphalt-light: #ebedef;
+
+/// @type Color
+$amethyst-dark: #76448A;
+
+/// @type Color
+$amethyst-mid: #AF7AC5;
+
+/// @type Color
+$amethyst-light: #F5EEF8;
+
 ///@type Color
 $background-colour: #ebedef;
 
@@ -30,6 +48,12 @@ $breakpoints: (
 :export {
     textColour: $text-colour;
     brandColour: $brand-colour;
+    amethystDark: $amethyst-dark;
+    amethystMid: $amethyst-mid;
+    amethystLight: $amethyst-light;
+    asphaltDark: $asphalt-dark;
+    asphaltMid: $asphalt-mid;
+    asphaltLight: $asphalt-light;
     backgroundColour: $background-colour;
     boldColour: $bold-colour;
 }

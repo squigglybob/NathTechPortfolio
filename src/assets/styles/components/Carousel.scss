@@ -1,0 +1,55 @@
+.slide {
+
+    display: flex;
+    position: relative;
+    background-color: $asphalt-mid;
+    font-family: $text-font-stack;
+    height: 100vh;
+    align-items: center;
+
+    border: solid 1px red;
+
+    @include element(description) {
+        flex: 60%;
+        padding: 2rem 4rem;
+        color: $asphalt-light;
+        font-size: 1.4rem;
+    }
+
+    @include element(image) {
+        flex: 40%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+
+    @include element(tech-stack) {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        right: 4rem;
+        bottom: 4rem;
+        color: $asphalt-light;
+    }
+
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+
+    @include element(name) {
+        padding-right: 2rem;
+
+    }
+
+    @include element(icon) {
+        border-radius: 10000px;
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+}

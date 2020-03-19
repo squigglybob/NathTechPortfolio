@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import { rhythm, scale } from '../utils/typography'
 
 class Layout extends React.Component {
   render() {
