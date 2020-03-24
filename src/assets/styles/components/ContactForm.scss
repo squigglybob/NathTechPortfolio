@@ -1,0 +1,36 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group {
+    @include element(text-input) {
+        padding: 5px 10px;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        background-color: $background-colour;
+        border: none;
+        width: 100%;
+    
+    
+        @include modifier(first) {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    
+        @include modifier(last) {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+
+    @include element(submit) {
+        @include button_basic;
+        width: fit-content;
+    }
+
+}
+
+
+
