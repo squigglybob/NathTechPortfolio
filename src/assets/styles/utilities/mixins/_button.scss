@@ -1,10 +1,19 @@
-@mixin button_basic {
+@mixin button_basic($colour, $back-colour) {
     border: none;
     font-size: 1.4rem;
     font-weight: 400;
-    padding: 0.3rem 4rem;
-    
+    padding: 0.3rem 4rem; 
+    transition: 400ms;
+    color: $colour;
+    border-radius: 1000px;
+    background: $back-colour;
+
     &:hover {
-      background-color: darken($bold-colour, 4%);
+      background-color: darken($back-colour, 4%);
+    }
+
+    &:disabled {
+      color: darken($colour, 20%);
+      background-color: darken($back-colour, 20%);
     }
 }

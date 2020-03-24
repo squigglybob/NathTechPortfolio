@@ -71,7 +71,7 @@ function Carousel({ projects }) {
                 }}
             >
                 {projects.map((project) => (
-                    <div id={project.id} className={`slide`} style={{ backgroundPosition: '0' }}>
+                    <div key={project.id} id={project.id} className={`slide`} style={{ backgroundPosition: '0' }}>
                         <div className="slide__description">
                             <h2>{project.name}</h2>
                             <p>{project.description}</p>
@@ -80,7 +80,7 @@ function Carousel({ projects }) {
                         </div>
                         <div className="slide__tech-stack">
                             {project.technologyStack.map((tech) =>
-                                <div className="tech-item">
+                                <div key={tech.name} className="tech-item">
                                     <h3 className="tech-item__name">{tech.name}</h3>
                                     <img className="tech-item__icon" src={tech.icon} alt={tech.name} title={tech.name} />
                                 </div>
@@ -89,8 +89,8 @@ function Carousel({ projects }) {
                     </div>
                 ))}
             </div>
-            <div class="arrow arrow-left" onClick={prevSlide}>&#60;</div>
-            <div class="arrow arrow-right" onClick={nextSlide}>&#x3e;</div>
+            <div className="arrow arrow-left" onClick={prevSlide}>&#60;</div>
+            <div className="arrow arrow-right" onClick={nextSlide}>&#x3e;</div>
         </div>
     )
 }

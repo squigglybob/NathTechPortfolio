@@ -19,16 +19,9 @@
   }
   
   @include element(button) {
-    @include button_basic;
-
-    background: $bold-colour;
-    color: $background-colour;
-    border-radius: 1000px;
+    @include button_basic($background-colour, $bold-colour);
     margin-top: 30px;
-    transition: 400ms;
-
   }
-
 }
 
 .nav {
