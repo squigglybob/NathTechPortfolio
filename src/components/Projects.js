@@ -1,13 +1,14 @@
-import React from 'react'
-import ProjectCarousel from './ProjectCarousel'
+import React, { useState } from 'react'
+import Carousel from 'components/Carousel'
 import ProjectList from 'components/ProjectList'
 
-import 'components/Projects.scss'
+import 'assets/styles/components/Projects.scss'
 
 import variables from 'assets/styles/utilities/_variables.scss'
 
 const projects = [
     {
+        id: 'nathtech_project',
         name: 'NathTech',
         description: 'Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.',
         image: 'https://source.unsplash.com/random',
@@ -27,6 +28,7 @@ const projects = [
         ]
     },
     {
+        id: 'supertimer_project',
         name: 'Super Timer',
         description: 'Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.',
         image: 'https://source.unsplash.com/random',
@@ -46,6 +48,7 @@ const projects = [
         ]
     },
     {
+        id: 'projectx_project',
         name: 'Project X',
         description: 'Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.',
         image: 'https://source.unsplash.com/random',
@@ -68,9 +71,15 @@ const projects = [
 
 function Projects(props) {
 
+    const [ activeIndex, setActiveIndex ] = useState(0)
+
+    const goToSlide = () => {
+
+    }
+
     return (
         <>
-            <ProjectCarousel colour={variables.boldColour} projects={projects} />
+            <Carousel projects={projects} activeIndex={activeIndex} />
             <ProjectList projects={projects} />
         </>
     )

@@ -1,5 +1,46 @@
-.slide {
+.carousel {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
+    .arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        color: white;
+        position: absolute;
+        z-index: 10;
+        border-radius: 1000px;
+        background-color: $asphalt-dark;
+        opacity: 50%;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .arrow-left {
+        left: 1rem;
+        top: 50%;
+    }
+
+    .arrow-right {
+        right: 1rem;
+        top: 50%
+    }
+}
+
+.holder {
+    width: 300%;
+    display: flex;
+    transition: transform 0.3s ease-out;
+}
+
+.animate {
+    transition: transform 0.3s ease-out;
+}
+
+.slide {
+    flex: 1;
     display: flex;
     position: relative;
     background-color: $asphalt-mid;
@@ -7,17 +48,15 @@
     height: 100vh;
     align-items: center;
 
-    border: solid 1px red;
-
     @include element(description) {
-        flex: 60%;
-        padding: 2rem 4rem;
+        flex: 4;
+        padding: 3rem 6rem;
         color: $asphalt-light;
         font-size: 1.4rem;
     }
 
     @include element(image) {
-        flex: 40%;
+        flex: 4;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -30,9 +69,12 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
-        right: 4rem;
-        bottom: 4rem;
+        right: 4.5rem;
+        bottom: 2rem;
         color: $asphalt-light;
+        background-color: rgba(0,0,0, 0.5);
+        padding: 20px 40px;
+        border-radius: 30px;
     }
 
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './Wrapper.scss'
+import 'assets/styles/components/Wrapper.scss'
 
 export default function Wrapper({ children, colour }) {
     return (
