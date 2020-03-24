@@ -72,7 +72,7 @@ export default function ContactForm() {
                 <button
                     className="form-group__submit button"
                     type="input"
-                    disabled={loading}
+                    disabled={ loading || !formData.recaptcha }
                 >
                     Send
                 </button>
