@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import ReCAPTCHA from "react-google-recaptcha"
 import Input from 'components/Input'
 
 import 'assets/styles/components/ContactForm.scss'
@@ -10,12 +10,13 @@ export default function ContactForm() {
         name: '',
         email: '',
         subject: '',
-        message: ''
+        message: '',
+        recaptcha: null,
     })
     const [loading, setLoading] = useState(false)
 
     const onChange = (name, value) => {
-        setFormData({ 
+        setFormData({
             ...formData,
             [name]: value,
         })
@@ -63,6 +64,11 @@ export default function ContactForm() {
                 />
             </div>
             <div className="form-group">
+                <ReCAPTCHA
+                    sitekey={process.env.RECAPTCHA_SITE_KEY}
+                    onChange={(value) => { onChange('recaptcha', value) }}
+                    onExpired={() => setFormData({ ...formData, recaptcha: null })}
+                />
                 <button
                     className="form-group__submit button"
                     type="input"
