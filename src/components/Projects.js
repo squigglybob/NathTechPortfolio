@@ -80,8 +80,8 @@ function Projects(props) {
     return (
         <>
             <Carousel projects={projects} activeIndex={activeIndex} />
-            <ProjectList projects={projects} />
-        </>
+{/*             <ProjectList projects={projects} />
+ */}        </>
     )
 }
 

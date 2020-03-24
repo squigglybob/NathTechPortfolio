@@ -24,7 +24,7 @@ export default function ContactForm() {
     const sendEmail = (e) => {
         e.preventDefault()
         console.log(formData);
-        
+        // send email to info@nathtech.dev
     }
 
     return (
