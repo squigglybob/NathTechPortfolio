@@ -1,7 +1,12 @@
 ---
-date: 2020-02-26T12:37:21Z
+date: 2020-02-26T12:37:21.000+00:00
 title: Project test 1
 projectPicture: "/uploads/hummingbird.jpg"
+description: ''
+image: ''
+tech_stack:
+- name: Gatsby
+  icon: "/uploads/gatsbyIcon.png"
 
 ---
 This project nearly made me cry, I enjoyed it so much.
