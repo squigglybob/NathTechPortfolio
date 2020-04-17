@@ -1,12 +1,24 @@
 ---
 date: 2020-02-26T12:37:21.000+00:00
-title: Project test 1
+title: NathTech Portfolio
 projectPicture: "/uploads/hummingbird.jpg"
-description: ''
-image: ''
+description: Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est dolmio
+  et sedete. Istnus empte fererre iluminate.Lorem Ipsum totor et dolete. Nunc ils
+  potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.Lorem Ipsum
+  totor et dolete. Nunc ils potate eres. Pugnus est dolmio et sedete. Istnus empte
+  fererre iluminate.Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est
+  dolmio et sedete. Istnus empte fererre iluminate.Lorem Ipsum totor et dolete. Nunc
+  ils potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.
+image: "/uploads/hummingbird.jpg"
 tech_stack:
 - name: Gatsby
   icon: "/uploads/gatsbyIcon.png"
+- icon: "/uploads/forestryIcon.png"
+  name: Forestry
+- icon: "/uploads/githubIcon.png"
+  name: GitHub
+- name: Netlify
+  icon: "/uploads/netlifyIcon.png"
 
 ---
 This project nearly made me cry, I enjoyed it so much.
