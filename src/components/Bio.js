@@ -26,7 +26,7 @@ class Bio extends React.Component {
                 src={data.dataJson.profilePic}
                 alt={data.dataJson.name}
               />
-              <div className="bio__text" dangerouslySetInnerHTML={{ __html: lorem }} />
+              <div className="bio__text" dangerouslySetInnerHTML={{ __html: data.dataJson.bio }} />
             </div>
           </Wrapper>
         )}
