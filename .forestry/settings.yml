@@ -6,6 +6,14 @@ webhook_url:
 sections:
 - type: heading
   label: Content
+- type: document
+  path: src/data/header.json
+  label: Header
+  match: "**/*"
+  read_only: false
+- type: document
+  path: src/data/bio.json
+  label: Bio
 - type: directory
   path: src/pages/projects
   label: Projects
@@ -15,8 +23,9 @@ sections:
   templates:
   - project
 - type: document
-  path: src/data/bio.json
-  label: Bio
+  path: src/data/socialMedia.json
+  label: Social Media
+  match: "**/*"
 - type: heading
   label: Admin
 - type: document
