@@ -9,8 +9,6 @@ sections:
 - type: document
   path: src/data/header.json
   label: Header
-  match: "**/*"
-  read_only: false
 - type: document
   path: src/data/bio.json
   label: Bio
@@ -25,7 +23,6 @@ sections:
 - type: document
   path: src/data/socialMedia.json
   label: Social Media
-  match: "**/*"
 - type: heading
   label: Admin
 - type: document
