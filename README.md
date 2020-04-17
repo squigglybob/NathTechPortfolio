@@ -22,7 +22,6 @@ Or [view the live demo here](https://gatsby-starter-blog-demo.netlify.com/).
 - create forestry models for the parts of data that need to be held
 - retrieve data from md files ( with GraphQL ) and render in components
 
-- Project template
 - header ✔
   - burger
   - links ✔
@@ -31,21 +30,21 @@ Or [view the live demo here](https://gatsby-starter-blog-demo.netlify.com/).
 - bio
   - image ✔
   - text ✔
-- carousel
-  - Project card
-    - Title
-    - description
-    - techStack icons (reuse)
+- carousel ✔
+  - Project card ✔
+    - Title ✔
+    - description ✔
+    - techStack icons ✔
     - button
-    - image
+    - image ✔
 - project list
   - link
   - techStack icons
-- Footer
-  - contact form
-    - input
-    - multi line input
-    - social links (reuse)
+- Footer ✔
+  - contact form ✔
+    - input ✔
+    - multi line input ✔
+    - social links  ✔
 
 - make site responsive
 

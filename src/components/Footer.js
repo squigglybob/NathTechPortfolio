@@ -5,15 +5,11 @@ import ContactForm from "components/ContactForm";
 import SocialLinks from "components/SocialLinks"
 
 import "assets/styles/components/Footer.scss"
-import variables from 'assets/styles/utilities/_variables.scss'
 
-function Footer() {
-
-    console.log(variables);
-    
+function Footer() {  
 
     return (
-        <Wrapper colour={variables.amethystDark} id="contact">
+        <Wrapper className="footer-wrapper" id="contact">
             <div className="footer">
                 <ContactForm />
                 <SocialLinks />
