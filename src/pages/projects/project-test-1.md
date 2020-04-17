@@ -19,6 +19,7 @@ tech_stack:
   name: GitHub
 - name: Netlify
   icon: "/uploads/netlifyIcon.png"
+link: nathtech.dev
 
 ---
 This project nearly made me cry, I enjoyed it so much.
