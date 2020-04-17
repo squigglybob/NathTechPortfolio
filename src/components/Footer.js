@@ -11,7 +11,7 @@ function Footer(props) {
 
 
     return (
-        <Wrapper colour={variables.amethystDark}>
+        <Wrapper colour={variables.amethystDark} id="contact">
             <div className="footer">
                 <ContactForm />
                 <SocialLinks />

@@ -78,10 +78,10 @@ function Projects(props) {
     }
 
     return (
-        <>
+        <div id="projects">
             <Carousel projects={projects} activeIndex={activeIndex} />
-{/*             <ProjectList projects={projects} />
- */}        </>
+{/*             <ProjectList projects={projects} /> */}
+        </div>
     )
 }
 

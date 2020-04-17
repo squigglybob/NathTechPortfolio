@@ -19,7 +19,7 @@ class Bio extends React.Component {
           }
         `}
         render={data => (
-          <Wrapper>
+          <Wrapper id="bio" >
             <div className="bio">
               <img
                 className="bio__image"

@@ -1,20 +1,20 @@
 import React from 'react'
-import styles from 'assets/styles/components/Header.scss'
+import 'assets/styles/components/Header.scss'
 
-function Header(props) {
+import menu from 'constants/menu'
 
-
+function Header() {
     return (
         <header className="header">
             <nav className="nav">
-                <a className="nav__link" href="#bio">Bio</a>
-                <a className="nav__link" href="#projects">Projects</a>
-                <a className="nav__link" href="#contact">Contact</a>
+                {menu.map((menuItem, i) =>
+                    <a key={i} className="nav__link" href={menuItem.link}>{menuItem.name}</a>
+                )}
             </nav>
 
             <div className="header__title">NathTech</div>
             <div className="header__sub-title">Developing Web Apps</div>
-            <button className="header__button">Contact Me</button>
+            <a className="header__button" href="#contact">Contact Me</a>
         </header>
     )
 }
