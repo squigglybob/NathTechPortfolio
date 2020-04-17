@@ -1,4 +1,30 @@
 ---
 label: Social Media
 hide_body: true
-fields: []
+fields:
+- name: social_media
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+    description: The url
+  - name: icon
+    type: file
+    config:
+      maxSize: 250
+    label: Icon
+    description: The icon for the social media company.
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Social media
+  description: Input your social media links here
