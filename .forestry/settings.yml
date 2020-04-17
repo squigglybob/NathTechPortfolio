@@ -7,9 +7,6 @@ sections:
 - type: heading
   label: Content
 - type: document
-  path: src/data/header.json
-  label: Header
-- type: document
   path: src/data/bio.json
   label: Bio
 - type: directory
