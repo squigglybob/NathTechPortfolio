@@ -1,6 +1,6 @@
 ---
 label: Project
-hide_body: false
+hide_body: true
 fields:
 - name: date
   type: datetime
@@ -18,8 +18,37 @@ fields:
   description: ''
   config:
     required: true
-- name: projectPicture
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: image
   type: file
-  label: Project Picture
+  label: image
+- name: tech_stack
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: icon
+    type: file
+    config:
+      maxSize: 250
+    label: Icon
+    description: The icon for that technology
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Tech Stack
+  description: The list of technologies used in this project
 pages:
 - src/pages/projects/project-test-1.md
