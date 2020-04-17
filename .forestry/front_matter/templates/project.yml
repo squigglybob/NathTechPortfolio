@@ -52,3 +52,4 @@ fields:
   description: The list of technologies used in this project
 pages:
 - src/pages/projects/project-test-1.md
+- src/pages/projects/super-timer.md
