@@ -7,8 +7,6 @@ const slideWidth = '100vw'
 
 function Carousel({ projects }) {
 
-    const width = window.innerWidth
-
     const [index, setIndex] = useState(0)
     const [longTouch, setLongTouch] = useState(undefined)
     const [touchStartX, setTouchStartX] = useState(undefined)
@@ -16,9 +14,10 @@ function Carousel({ projects }) {
     const [moveX, setMoveX] = useState(undefined)
     const [animate, setAnimate] = useState('')
     const [translate, setTranslate] = useState(0)
+    const [width, setWidth] = useState(0)
 
     useEffect(() => {
-
+        setWidth(window.innerWidth)
     }, [])
 
     const handleTouchStart = (event) => {
