@@ -7,8 +7,10 @@ import SocialLinks from "components/SocialLinks"
 import "assets/styles/components/Footer.scss"
 import variables from 'assets/styles/utilities/_variables.scss'
 
-function Footer(props) {
+function Footer() {
 
+    console.log(variables);
+    
 
     return (
         <Wrapper colour={variables.amethystDark} id="contact">

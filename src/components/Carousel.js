@@ -14,7 +14,7 @@ function Carousel({ projects }) {
     const [moveX, setMoveX] = useState(undefined)
     const [animate, setAnimate] = useState('')
     const [translate, setTranslate] = useState(0)
-    const [width, setWidth] = useState(0)
+    const [width, setWidth] = useState(900)
 
     useEffect(() => {
         setWidth(window.innerWidth)
