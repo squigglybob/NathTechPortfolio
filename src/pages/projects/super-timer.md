@@ -14,5 +14,6 @@ tech_stack:
   icon: "/uploads/firebaseIcon.png"
 - name: React
   icon: "/uploads/reactIcon.png"
+link: "#"
 
 ---
