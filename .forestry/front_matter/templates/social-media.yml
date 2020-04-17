@@ -28,3 +28,5 @@ fields:
     labelField: 
   label: Social media
   description: Input your social media links here
+pages:
+- src/data/socialMedia.json
