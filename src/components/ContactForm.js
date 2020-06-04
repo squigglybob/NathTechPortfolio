@@ -52,8 +52,9 @@ export default function ContactForm() {
     }
 
     return (
-        <form className="contact-form" name={formName} onSubmit={sendEmail} data-netlify="true" data-netlify-honeypot="bot-field" >
+        <form className="contact-form" name={formName} onSubmit={sendEmail} data-netlify-recaptcha="true" data-netlify="true" data-netlify-honeypot="bot-field" >
             <input type="hidden" name="form-name" value={formName} />
+            <input name="bot-field" />
             <div className="form-group">
                 <Input
                     className={"form-group__text-input form-group__text-input--first"}
