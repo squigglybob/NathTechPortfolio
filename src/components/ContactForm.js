@@ -4,15 +4,19 @@ import Input from 'components/Input'
 
 import 'assets/styles/components/ContactForm.scss'
 
+const INITIAL_FORM_DATA = {
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+    recaptcha: null,
+}
+
 export default function ContactForm() {
 
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-        recaptcha: null,
-    })
+    const formName = "contact"
+
+    const [formData, setFormData] = useState(INITIAL_FORM_DATA)
     const [loading, setLoading] = useState(false)
 
     const onChange = (name, value) => {
@@ -22,14 +26,34 @@ export default function ContactForm() {
         })
     }
 
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+    }
+
     const sendEmail = (e) => {
         e.preventDefault()
         console.log(formData);
-        // send email to info@nathtech.dev
+        // capture form data on netlify
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...formData })
+        })
+            .then(() => {
+                alert("Success!")
+                setFormData(INITIAL_FORM_DATA)
+            })
+            .catch(error => {
+                console.log(error)
+                alert("Error: Message not sent")
+            });
     }
 
     return (
-        <form className="contact-form" onSubmit={sendEmail}>
+        <form className="contact-form" name={formName} onSubmit={sendEmail} data-netlify="true" data-netlify-honeypot="bot-field" >
+            <input type="hidden" name="form-name" value={formName} />
             <div className="form-group">
                 <Input
                     className={"form-group__text-input form-group__text-input--first"}
@@ -72,7 +96,7 @@ export default function ContactForm() {
                 <button
                     className="form-group__submit button"
                     type="input"
-                    disabled={ loading || !formData.recaptcha }
+                    disabled={loading || !formData.recaptcha}
                 >
                     Send
                 </button>
