@@ -19,7 +19,7 @@ fields:
   - name: icon
     type: file
     config:
-      maxSize: 250
+      maxSize: 5
     label: Icon
     description: The icon for the social media company.
   config:
