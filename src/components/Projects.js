@@ -5,6 +5,7 @@ import ProjectList from 'components/ProjectList'
 import 'assets/styles/components/Projects.scss'
 
 import variables from 'assets/styles/utilities/_variables.scss'
+import { useStaticQuery, graphql } from 'gatsby'
 
 const projects = [
     {
@@ -76,6 +77,8 @@ function Projects(props) {
     const goToSlide = () => {
 
     }
+
+
 
     return (
         <div id="projects">

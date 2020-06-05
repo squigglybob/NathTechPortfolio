@@ -90,7 +90,7 @@ export default function ContactForm() {
             </div>
             <div className="form-group">
                 <ReCAPTCHA
-                    sitekey={process.env.RECAPTCHA_SITE_KEY}
+                    sitekey={process.env.SITE_RECAPTCHA_KEY}
                     onChange={(value) => { onChange('recaptcha', value) }}
                     onExpired={() => setFormData({ ...formData, recaptcha: null })}
                 />
