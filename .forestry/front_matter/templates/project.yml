@@ -47,7 +47,7 @@ fields:
   - name: icon
     type: file
     config:
-      maxSize: 250
+      maxSize: 1
     label: Icon
     description: The icon for that technology
   config:
