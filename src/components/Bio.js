@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, StaticQuery, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 
 import Wrapper from "./Wrapper";
 import 'assets/styles/components/Bio.scss'

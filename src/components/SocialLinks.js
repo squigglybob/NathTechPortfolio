@@ -4,19 +4,6 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 import 'assets/styles/components/SocialLinks.scss'
 
-/* const socialLinks = [
-    {
-        name: 'LinkedIn',
-        link: 'linkedIn',
-        icon: 'https://picsum.photos/50/50',
-    },
-    {
-        name: 'GitHub',
-        link: 'GitHub',
-        icon: 'https://picsum.photos/50/50',
-    }
-] */
-
 export default function SocialLinks() {
 
     const data = useStaticQuery(graphql`

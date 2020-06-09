@@ -5,7 +5,7 @@ import 'assets/styles/components/Carousel.scss'
 
 const slideWidth = '100vw'
 
-function Carousel({ projects }) {
+function Carousel({ data }) {
 
     const [index, setIndex] = useState(0)
     const [longTouch, setLongTouch] = useState(undefined)
@@ -21,7 +21,7 @@ function Carousel({ projects }) {
     }, [])
 
     const handleTouchStart = (event) => {
-        console.log('touch starte');
+        console.log('touch start');
         // check for long touch?
         setTouchStartX(event.touches[0].pageX)
         setAnimate('')
@@ -56,6 +56,28 @@ function Carousel({ projects }) {
         setIndex(i => i - 1)
     }
 
+    const projects = data.map(({
+        node: {
+            id,
+            frontmatter: {
+                date,
+                description,
+                image,
+                link,
+                title,
+                tech_stack
+            }
+        }
+    }) => ({
+        id,
+        date,
+        description,
+        image,
+        link,
+        title,
+        tech_stack,
+    }))
+
     return (
         <div className={classNames("carousel")}>
             <div
@@ -72,13 +94,13 @@ function Carousel({ projects }) {
                 {projects.map((project) => (
                     <div key={project.id} id={project.id} className={`slide`} style={{ backgroundPosition: '0' }}>
                         <div className="slide__description">
-                            <h2>{project.name}</h2>
+                            <h2>{project.title}</h2>
                             <p>{project.description}</p>
                         </div>
                         <div className="slide__image" style={{ backgroundImage: `url("${project.image}")` }} title={project.name} >
                         </div>
                         <div className="slide__tech-stack">
-                            {project.technologyStack.map((tech) =>
+                            {project.tech_stack.map((tech) =>
                                 <div key={tech.name} className="tech-item">
                                     <h3 className="tech-item__name">{tech.name}</h3>
                                     <img className="tech-item__icon" src={tech.icon} alt={tech.name} title={tech.name} />
@@ -88,8 +110,8 @@ function Carousel({ projects }) {
                     </div>
                 ))}
             </div>
-            <div className="arrow arrow-left" onClick={prevSlide}>&#60;</div>
-            <div className="arrow arrow-right" onClick={nextSlide}>&#x3e;</div>
+            {index !== 0 && <div className="arrow arrow-left" onClick={prevSlide}>&#60;</div>}
+            {index !== projects.length - 1 && <div className="arrow arrow-right" onClick={nextSlide}>&#x3e;</div>}
         </div>
     )
 }
