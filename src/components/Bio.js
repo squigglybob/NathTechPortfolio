@@ -18,7 +18,7 @@ function Bio() {
   return (
     <Wrapper id="bio" >
       <div className="bio">
-        <div class="image-wrapper">
+        <div className="image-wrapper">
           <div
             className="bio__image"
             style={{
