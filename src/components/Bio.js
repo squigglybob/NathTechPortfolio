@@ -17,15 +17,21 @@ function Bio() {
 
   return (
     <Wrapper id="bio" >
-    <div className="bio">
-      <img
-        className="bio__image"
-        src={data.dataJson.profilePic}
-        alt={data.dataJson.name}
-      />
-      <div className="bio__text" dangerouslySetInnerHTML={{ __html: data.dataJson.bio }} />
-    </div>
-  </Wrapper>
+      <div className="bio">
+        <div class="image-wrapper">
+          <div
+            className="bio__image"
+            style={{
+              backgroundImage: `url(${data.dataJson.profilePic})`,
+              backgroundPosition: 'center',
+              backgroundSize: 'cover'
+            }}
+          >
+        </div>
+        </div>
+        <div className="bio__text" dangerouslySetInnerHTML={{ __html: data.dataJson.bio }} />
+      </div>
+    </Wrapper>
   )
 }
 
