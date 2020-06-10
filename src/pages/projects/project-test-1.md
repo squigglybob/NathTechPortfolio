@@ -1,11 +1,11 @@
 ---
-date: 2020-06-10T11:00:21Z
+date: 2020-06-10T11:00:21.000+00:00
 title: NathTech Portfolio
 projectPicture: "/uploads/hummingbird.jpg"
 description: |-
-  Built with a [https://jamstack.org/](JAM stack) for high performance and security, this portfolio shows off some of the latest web technologies.
+  Built with a [https://jamstack.org/](https://jamstack.org "JAM Stack") for high performance and security, this portfolio shows off some of the latest web technologies.
 
-  Built using Gatsby, the portfolio also functions as a PWA. This means you can access the website offline, and can also install the site as a web app on your phone.
+  Built using [Gatsby](https://www.gatsbyjs.org/ "Gatsby"), the portfolio also functions as a PWA. This means you can access the website offline, and can also install the site as a web app on your phone.
 
   Give it a try now. Go to your menu and click on install Nath Tech Portfolio.
 image: "/uploads/nathtechscreenshot.png"
