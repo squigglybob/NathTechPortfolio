@@ -1,5 +1,5 @@
 ---
-date: 2020-06-11T08:00:00Z
+date: 2020-06-11T08:00:00.000+00:00
 title: Wordpress sites
 description: |-
   Wordpress is a very widely used CMS platform for managing websites.
@@ -9,7 +9,7 @@ description: |-
   I can write custom Post types for anything you need, such as Audio, Video, People, Places etc. as well as custom plugins to manage your forms.
 
   Send me a message if you are interested.
-image: "/uploads/red-drop668.jpg"
+image: "/uploads/team-member-data.png"
 tech_stack:
 - name: Wordpress
   icon: "/uploads/wordpress-icon.png"
