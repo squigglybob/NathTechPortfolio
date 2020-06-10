@@ -1,20 +1,18 @@
 ---
-date: 2020-04-17T16:31:04Z
-title: Project X
-description: "Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est dolmio
-  et sedete. Istnus empte fererre iluminate.Lorem Ipsum totor et dolete. Nunc ils
-  potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.Lorem Ipsum
-  totor et dolete. Nunc ils potate eres. Pugnus est dolmio et sedete. Istnus empte
-  fererre iluminate.Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est
-  dolmio et sedete. Istnus empte fererre iluminate.Lorem Ipsum totor et dolete. Nunc
-  ils potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.\n\n"
+date: 2020-06-11T08:00:00Z
+title: Wordpress sites
+description: |-
+  Wordpress is a very widely used CMS platform for managing websites.
+
+  Given a website design, I can build a high quality bespoke backend that serves your needs, as well as build out the front end to your design specifications.
+
+  I can write custom Post types for anything you need, such as Audio, Video, People, Places etc. as well as custom plugins to manage your forms.
+
+  Send me a message if you are interested.
 image: "/uploads/red-drop668.jpg"
 tech_stack:
-- name: GitHub
-  icon: "/uploads/githubIcon.png"
-- name: Netlify
-  icon: "/uploads/netlifyIcon.png"
-- name: Gatsby
-  icon: "/uploads/gatsbyIcon.png"
+- name: Wordpress
+  icon: "/uploads/wordpress-icon.png"
+link: "#"
 
 ---
