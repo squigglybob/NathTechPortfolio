@@ -22,7 +22,6 @@ function Projects() {
                         id
                         frontmatter {
                         date
-                        description
                         image
                         link
                         projectPicture
@@ -32,6 +31,7 @@ function Projects() {
                                 name
                             }
                         }
+                        html
                     }
                 }
             }

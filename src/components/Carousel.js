@@ -61,17 +61,17 @@ function Carousel({ data }) {
             id,
             frontmatter: {
                 date,
-                description,
                 image,
                 link,
                 title,
                 tech_stack
-            }
+            },
+            html
         }
     }) => ({
         id,
         date,
-        description,
+        html,
         image,
         link,
         title,
@@ -95,7 +95,7 @@ function Carousel({ data }) {
                     <div key={project.id} id={project.id} className={`slide`} style={{ backgroundPosition: '0' }}>
                         <div className="slide__description">
                             <h2>{project.title}</h2>
-                            <div dangerouslySetInnerHTML={{ __html: project.description }} />
+                            <div dangerouslySetInnerHTML={{ __html: project.html }} />
                         </div>
                         <div className="slide__image" style={{ backgroundImage: `url("${project.image}")` }} title={project.name} >
                         </div>
