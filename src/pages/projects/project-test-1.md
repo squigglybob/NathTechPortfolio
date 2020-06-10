@@ -1,15 +1,9 @@
 ---
-date: 2020-02-26T12:37:21.000+00:00
+date: 2020-06-10T11:00:21Z
 title: NathTech Portfolio
 projectPicture: "/uploads/hummingbird.jpg"
-description: Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est dolmio
-  et sedete. Istnus empte fererre iluminate.Lorem Ipsum totor et dolete. Nunc ils
-  potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.Lorem Ipsum
-  totor et dolete. Nunc ils potate eres. Pugnus est dolmio et sedete. Istnus empte
-  fererre iluminate.Lorem Ipsum totor et dolete. Nunc ils potate eres. Pugnus est
-  dolmio et sedete. Istnus empte fererre iluminate.Lorem Ipsum totor et dolete. Nunc
-  ils potate eres. Pugnus est dolmio et sedete. Istnus empte fererre iluminate.
-image: "/uploads/hummingbird.jpg"
+description: ''
+image: "/uploads/nathtechscreenshot.png"
 tech_stack:
 - name: Gatsby
   icon: "/uploads/gatsbyIcon.png"
