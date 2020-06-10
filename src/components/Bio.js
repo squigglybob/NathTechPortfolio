@@ -27,7 +27,7 @@ function Bio() {
               backgroundSize: 'cover'
             }}
           >
-        </div>
+          </div>
         </div>
         <div className="bio__text" dangerouslySetInnerHTML={{ __html: data.dataJson.bio }} />
       </div>

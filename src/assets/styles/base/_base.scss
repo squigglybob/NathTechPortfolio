@@ -23,9 +23,9 @@ h2 {
 a {
     text-decoration: none;
     box-shadow: none;
-    color: $background-colour;
+    color: $amethyst-dark;
 
     &:hover {
-        color: darken($background-colour, 5%);
+        color: darken($amethyst-dark, 5%);
     }
 }

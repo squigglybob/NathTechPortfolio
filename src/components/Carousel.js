@@ -95,7 +95,7 @@ function Carousel({ data }) {
                     <div key={project.id} id={project.id} className={`slide`} style={{ backgroundPosition: '0' }}>
                         <div className="slide__description">
                             <h2>{project.title}</h2>
-                            <p>{project.description}</p>
+                            <div dangerouslySetInnerHTML={{ __html: project.description }} />
                         </div>
                         <div className="slide__image" style={{ backgroundImage: `url("${project.image}")` }} title={project.name} >
                         </div>
