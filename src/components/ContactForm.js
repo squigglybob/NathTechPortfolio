@@ -26,13 +26,13 @@ export default function ContactForm() {
         })
     }
 
-    const encode = (data) => {
+/*     const encode = (data) => {
         return Object.keys(data)
             .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
             .join("&");
-    }
+    } */
 
-    const sendEmail = (e) => {
+/*     const sendEmail = (e) => {
         e.preventDefault()
         console.log(formData);
         // capture form data on netlify
@@ -49,10 +49,10 @@ export default function ContactForm() {
                 console.log(error)
                 alert("Error: Message not sent")
             });
-    }
+    } */
 
     return (
-        <form className="contact-form" name={formName} onSubmit={sendEmail} data-netlify-recaptcha="true" data-netlify="true" data-netlify-honeypot="bot-field" >
+        <form className="contact-form" name={formName} method="POST" data-netlify="true" /* onSubmit={sendEmail} */ data-netlify="true" data-netlify-honeypot="bot-field" >
             <input type="hidden" name="form-name" value={formName} />
             <input type="hidden" name="bot-field" />
             <div className="form-group">
@@ -96,7 +96,7 @@ export default function ContactForm() {
                 />
                 <button
                     className="form-group__submit button"
-                    type="input"
+                    type="submit"
                     disabled={loading || !formData.recaptcha}
                 >
                     Send
