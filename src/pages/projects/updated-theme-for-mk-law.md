@@ -7,7 +7,7 @@ tech_stack:
 - name: Wordpress
   icon: "/uploads/wordpress-icon.png"
 - name: Sass
-  icon: ''
+  icon: "/uploads/sass-icon.png"
 
 ---
 My client required an existing site built with a custom Wordpress theme to have a visual overhaul and some site map changes.
